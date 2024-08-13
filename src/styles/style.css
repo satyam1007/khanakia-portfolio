@@ -1,0 +1,136 @@
+#software {
+  width: 550px;
+  height: 550px;
+}
+
+.yellow-bg::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 18px; /* Adjust the height as needed */
+  background-color: #fcd34d9f; /* Tailwind's yellow-300 color */
+  z-index: -1;
+}
+
+.relative-container {
+  position: relative;
+  display: inline-block;
+}
+
+
+@media (max-width: 1135px) {
+  #contactSVG{
+  width: 550px;
+  height: 550px;
+  }
+}
+
+@media (max-width: 1100px) {
+  #contactSVG{
+  width: 450px;
+  height: 450px;
+  }
+}
+
+@media (max-width: 980px) {
+  #contactSVG{
+  width: 400px;
+  height: 400px;
+  }
+}
+
+@media (max-width: 980px) {
+  #contact-form{
+    justify-content: center;
+  }
+}
+
+@media (max-width: 780px) {
+  #services-para{
+    width: 500px;
+  }
+}
+
+@media (max-width: 740px) {
+  #software {
+    width: 400px;
+    height: 400px;
+  }
+
+  #heading {
+    font-size: 50px;
+  }
+
+  #hero{
+    margin-top: 0%;
+  }
+
+  #GetInTouch{
+    text-align: start;
+  }
+
+  .yellow-bg::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 10px;
+    background-color: #fcd34d9f;
+    z-index: -1;
+  }
+  #yellowish-heading{
+    font-size: 33px;
+  }
+
+  #footer-col{
+    justify-content: space-between;
+  }
+
+  #Comprehensive{
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 530px) {
+  #services-para{
+    width: 400px;
+  }
+
+  #contactSVG{
+    width: 300px;
+    height: 300px;
+    }
+}
+
+@media (max-width: 397px) {
+  #software {
+    width: 300px;
+    height: 300px;
+  }
+
+  #heading {
+    font-size: 40px;
+  }
+
+  #services-para{
+    width: 330px;
+  }
+}
+
+
+@media (max-width: 420px) {
+  #services-para{
+    width: 330px;
+  }
+}
+
+@media (max-width: 350px) {
+  #services-para{
+    width: 250px;
+  }
+}

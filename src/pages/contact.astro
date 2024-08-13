@@ -1,0 +1,79 @@
+---
+import ContactLayout from "../layouts/ContactLayout.astro";
+import { Icon } from "astro-icon/components";
+const pageTitle = "Contact - Khanakia - Excellence in Software Development	";
+---
+
+<ContactLayout pageTitle={pageTitle}>
+  <div
+    class="m-6 mt-20 flex items-center justify-between flex-wrap gap-10"
+    id="contact-form"
+  >
+    <div>
+      <div>
+        <h1 class="text-4xl lg:text-6xl font-bold lg:font-semibold">
+          Let's build future <br /> together
+        </h1>
+      </div>
+      <div class="py-8 max-w-lg">
+        <form class="mt-10">
+          <div class="mb-4">
+            <label class="text-lg font-light block">Full Name</label>
+            <input
+              class="border border-gray-300 py-2 px-3 rounded w-full"
+              type="text"
+              name="your-name"
+            />
+          </div>
+          <div class="flex flex-col md:flex-row items-center gap-4 mb-4">
+            <div class="w-full">
+              <label class="text-lg font-light block">Email</label>
+              <input
+                class="border border-gray-300 py-2 px-3 rounded w-full"
+                type="email"
+                name="your-email"
+              />
+            </div>
+            <div class="w-full">
+              <label class="text-lg font-light block">Phone number</label>
+              <input
+                class="border border-gray-300 py-2 px-3 rounded w-full"
+                type="tel"
+                name="your-phone"
+              />
+            </div>
+          </div>
+          <div class="mb-4">
+            <label class="text-lg font-light block"
+              >Tell us about your challenge</label
+            >
+            <textarea
+              name="your-message"
+              class="border border-gray-300 py-2 px-3 rounded w-full"
+              rows="4"></textarea>
+          </div>
+        </form>
+      </div>
+      <div>
+        <button
+          class="text-black border-2 border-black py-2 px-10 hover:bg-black duration-300 hover:text-white rounded-full text-xl font-medium"
+          type="submit"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <Icon name="contact" id="contactSVG" size={600} />
+      </div>
+    </div>
+  </div>
+
+  <!-- <div>
+    <div>
+      <Icon name="map" size={600} />
+    </div>
+  </div> -->
+</ContactLayout>

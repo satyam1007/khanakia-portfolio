@@ -1,0 +1,74 @@
+---
+import { Icon } from "astro-icon/components";
+
+const pages = [
+  { title: "Case Studies", url: "/case" },
+  { title: "Services", url: "/services" },
+  { title: "About Us", url: "/about" },
+];
+---
+
+<div class="shadow">
+  <div class="flex flex-row justify-between items-center py-4">
+    <div class="pl-5 mb-4 sm:mb-0" id="container">
+      <a
+        href="/"
+        class="flex text-black font-medium items-center gap-2 tracking-widest text-xl from-inherit"
+      >
+        <img
+          src="https://www.khanakia.com/wp-content/uploads/2021/02/logo.png"
+          alt="logo.png"
+        />
+        KHANAKIA
+      </a>
+    </div>
+    <div class="hidden sm:flex pr-5" id="pagesLinks">
+      {
+        pages.map((item) => (
+          <>
+            <a
+              href={item.url}
+              class="text-md duration-200 pl-10 font-sans hover:scale-110 hover:font-semibold"
+            >
+              {item.title}
+            </a>
+          </>
+        ))
+      }
+
+      <button class="pl-10">
+        <a
+          href="/contact"
+          class="bg-black py-3 px-6 rounded-full text-white font-bold hover:bg-yellow-300 hover:text-black duration-300"
+          >Contact</a
+        >
+      </button>
+    </div>
+
+    <div class="block sm:hidden pr-5 pb-3 cursor-pointer" id="menu-toggle">
+      <Icon name="hamburger" size={30} />
+    </div>
+  </div>
+
+  <div class="hidden md:hidden p-4" id="nav-links">
+    <div class="flex items-center flex-col gap-2">
+      {
+        pages.map((item) => (
+          <a
+            href={item.url}
+            class="pl-3 w-full duration-200 py-2 rounded font-medium hover:scale-105 hover:font-bold"
+            style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;"
+          >
+            {item.title}
+          </a>
+        ))
+      }
+      <a
+        href="/contact"
+        class="pl-3 w-full duration-200 py-2 rounded font-medium hover:scale-105 hover:font-semibold"
+        style="box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;"
+        >Contact</a
+      >
+    </div>
+  </div>
+</div>

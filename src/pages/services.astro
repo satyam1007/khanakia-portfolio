@@ -1,0 +1,96 @@
+---
+import ServicesLayout from "../layouts/ServicesLayout.astro";
+const pageTitle = "Services - Khanakia - Excellence in Software Development";
+import Accordion from "../components/react";
+import { Icon } from "astro-icon/components";
+---
+
+<ServicesLayout pageTitle={pageTitle}>
+  <div class="m-5">
+    <div>
+      <h1 class="text-6xl font-bold" id="Comprehensive">
+        Comprehensive <br /> Services
+      </h1>
+    </div>
+    <div class="mt-8 w-1/2 px-2" id="services-para">
+      <p class="text-2xl font-light text-justify">
+        From strategy to execution, our wining combination of innovative
+        thinking, scientific design, sophisticated development, and ongoing
+        analysis ensure we’re delivering values to help you grow.
+      </p>
+    </div>
+  </div>
+  <div
+    style="background: #F3F3F3; box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;"
+    class="mt-20"
+  >
+    <div class="p-10 flex items-center justify-around flex-wrap gap-10">
+      <div>
+        <div>
+          <Icon name="innovate" size={100} />
+        </div>
+        <div class="mt-5">
+          <h1 class="text-2xl">Innovate</h1>
+          <div class="w-52 leading-7 mt-3">
+            <p class="text-md font-light">
+              Design Thinking Strategy Technolog Architecture Digital Product
+              Strategy Innovative Sprints
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <Icon name="design" size={100} />
+        </div>
+        <div class="mt-5">
+          <h1 class="text-2xl">Design</h1>
+          <div class="w-52 leading-7 mt-3">
+            <p class="text-md font-light">
+              UI/UX Research UI/UX Design Brand Identity Design Graphic Design
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <Icon name="develop" size={100} />
+        </div>
+        <div class="mt-5">
+          <h1 class="text-2xl">Develop</h1>
+          <div class="w-52 leading-7 mt-3">
+            <p class="text-md font-light">
+              Web Applications Enterprise Systems Mobile Apps Websites
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <Icon name="grow" size={100} />
+        </div>
+        <div class="mt-5">
+          <h1 class="text-2xl">Grow</h1>
+          <div class="w-52 leading-7 mt-3">
+            <p class="text-md font-light">
+              Marketing Strategy Optimization/Analysis Interactive Videos
+              Content Marketing
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="text-center mt-20">
+      <div class="relative-container yellow-bg">
+        <h1 class="text-6xl relative yellow-bg" id="yellowish-heading">
+          We Can Help You With
+        </h1>
+      </div>
+    </div>
+    <div class="mt-20 mb-20">
+      <Accordion client:load />
+    </div>
+  </div>
+</ServicesLayout>
